@@ -43,7 +43,7 @@ async function _getEmpData(path) {
   // 1. Removing comments
   // 2. Removing duplicates in dates i.e. same date is found more than once for same employee 
   const result = records
-    .filter((emp) => emp.indexOf('//'))
+    .filter((emp) => !(emp.indexOf('//') >= 0))
     .map((emp) => {
       const result = emp.split(' ');
       return {
