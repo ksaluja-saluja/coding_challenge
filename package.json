@@ -1,0 +1,14 @@
+{
+  "name": "ubank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node ./Components/test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-node": "^1.16.2"
+  }
+}
